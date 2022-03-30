@@ -1,0 +1,101 @@
+:root{
+    --max-width:1000px;
+    --box-2-width:1;
+    --box-3-width:3;
+    --background-color: grey;
+    --border:black;
+}
+body{
+    height: 1000px;
+}
+
+.container{
+    max-width: 100%; 
+    margin: 3px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* position: relative; */
+}
+.box{
+    margin-bottom: 5px;
+}
+
+.clr {
+    clear: both;
+}
+body {
+    font-family: 'Comic Neue', cursive; 
+    font-size: small; }
+
+#box-1{
+    border: 3px solid var(--border);
+    background-color: var(--background-color);
+    text-align: center;
+    width: 100%;
+    /* position: absolute; */
+}
+#box-2{
+    border: 3px solid var(--border);
+    background-color: var(--background-color);
+    float: left;
+    flex: var(--box-2-width);;
+    height: 200px;
+    padding: 10px;
+    /* position: absolute; */
+}
+#box-3{
+    border: 3px solid var(--border);
+    background-color: var(--background-color);
+    text-align: center;
+    float: right;
+    flex: var(--box-3-width);
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+#box-4{
+    border: 3px solid var(--border);
+    background-color: var(--background-color);
+    text-align: center;
+
+}
+
+img {
+    border-radius: 50%;
+  }   
+
+  .stick{
+    background-color: grey;
+    position: sticky;
+    top:0;
+}
+.nav{
+    background-color: grey;
+    position: sticky;
+    top:0;
+}
+.nav li{
+    display: inline;
+    font-size: 36px;
+    text-align: center;
+    padding-right: 20px;
+    position: sticky;
+    top:0;
+    /* float: left; */
+}
+
+.nav li button:hover{
+        background-color: rgb(185, 180, 180);
+}
+button{
+    margin-left: 25px;
+    width: 100px;
+    /* display: block; */
+    margin: 20px;
+    
+}
+
+body{
+    height: 4000px;
+}
